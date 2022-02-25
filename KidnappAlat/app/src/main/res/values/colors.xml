@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#00AAFF</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="deepblue">#010110</color>
+    <color name="blurtrans">#DD00aaFF</color>
+    <color name="transblue">#aa00ffff</color>
+    <color name="darkblue">#000005</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="blackblue">#000c15</color>
+    <color name="deepdarkblue">#000f13</color>
+    <color name="redgradient">#F5F3021F</color>
+    <color name="bluestroke">#aa00aaff</color>
+    <color name="bluedarkextreme">#000f13</color>
+    <color name="bluedarkx">#001a23</color>
+    <color name="blacky">#000000</color>
+    <color name="reddarkx">#230003</color>
+    <color name="reddarkextreme">#130002</color>
+    <color name="bluetextcolor">#8800aaff</color>
+</resources>

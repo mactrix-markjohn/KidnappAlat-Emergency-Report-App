@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/noneview"
+        android:title="None"/>
+    <item android:id="@+id/normalview"
+        android:title="Normal View"/>
+    <item android:id="@+id/sateliteview"
+        android:title="Satellite View"/>
+    <item android:id="@+id/terrinview"
+        android:title="Terrain View"/>
+    <item android:id="@+id/hybridview"
+        android:title="Hybrid View"/>
+
+</menu>

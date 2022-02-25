@@ -1,0 +1,225 @@
+<resources>
+    <string name="app_name">KidnappAlat</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_kidnapp_alat">KidnappAlat</string>
+    <string name="title_activity_user_info">UserInfo</string>
+    <string name="title_activity_introduction">Introduction</string>
+
+
+    <!-- Database Reference Tags for Users /-->
+    <string name="users">users</string>
+    <string name="username">username</string>
+    <string name="phonenumber">phonenumber</string>
+    <string name="fullname">fullname</string>
+    <string name="gender">gender</string>
+    <string name="address">address</string>
+    <string name="occupation">occupation</string>
+    <string name="dataofbirth">dataofbirth</string>
+    <string name="day">day</string>
+    <string name="month">month</string>
+    <string name="year">year</string>
+    <string name="profilepicture">profilepicture</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+
+    <!-- Database Reference Tag for Geofences/-->
+    <string name="geofence">geofence</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="messageEnter">messageenter</string>
+    <string name="messageStill">messagestill</string>
+    <string name="messageExit">messageexit</string>
+    <string name="GeoID">geoid</string>
+
+
+    <!--SQLLITE Database names/-->
+    <string name="geofencedownloaded">geofencedown</string>
+    <string name="addedgeofence">addedgeofences</string>
+
+    <!--Shared Prefrence tags/-->
+    <string name="login">login</string>
+    <string name="userdetail">userdetails</string>
+
+
+    <!--Service SharedPreference String Tag/-->
+    <string name="stopservice">stopservice</string>
+    <string name="stopdistress">stopdistress</string>
+    <string name="stopdistressmonitor">stopdistressmonitor</string>
+
+    <string name="title_activity_user_details">UserDetails</string>
+    <string name="requiredinstruction">The Information required below are extremely important and we advice you to please fill up every field below. Thank you for your co-operation.</string>
+    <string name="title_activity_picture_profile">PictureProfile</string>
+
+
+    <!--String Tag to control Repetition of the Authentication Activities/-->
+    <string name="noregister">noregister</string>
+    <string name="nologin">nologin</string>
+    <string name="nouserdetail">nouserdetail</string>
+    <string name="noaddphoto">noaddphoto</string>
+
+
+    <!--String Tag for processing GeoCode/-->
+    <string name="locationsent">com.mactrix.www.kidnappalat.location</string>
+    <string name="resultreceiver">com.mactric.www.kidnappalat.resultreceiver</string>
+    <string name="colletedmapgeofence">collectedmapgeofence</string>
+
+    <!--String Tag to Process Distress Alat/-->
+    <string name="Distress">distress</string>
+    <string name="LawEmail">chukwuemekaokparaeke@gmail.com</string>
+    <string name="title_activity_distress_users">DistressUsers</string>
+    <string name="title_activity_map_tracking">MapTracking</string>
+    <string name="trackbroadcast">trackbroadcast</string>
+    <string name="distressusers">distressusers</string>
+    <string name="victim">victim</string>
+
+    <string name="disuserbroadcast">disuserbroadcast</string>
+
+    <string name="DistressSigna">distresssigna</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_emergency_contacts">EmergencyContacts</string>
+    <string name="emergencycontactbase">emergencycontactsbase</string>
+    <string name="refresh">refresh</string>
+
+    <string name="stopkidnapp">stopkidnapp</string>
+    <string name="videofeedcounter">videofeedcounter</string>
+    <string name="videoreceivecounter">videoreceivecounter</string>
+    <string name="videofeeds">videofeeds</string>
+    <string name="stopvideorecording">stopvideorecording</string>
+    <string name="title_activity_victim_video">VictimVideo</string>
+    <string name="videofeedintent">videofeddintent</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+
+    <string name="distresspassword">distresspassword</string>
+    <string name="checkdispassword">checkdispassword</string>
+    <string name="geolistbroadcast">geolistbroadcast</string>
+
+    <string name="introclick">introclick</string>
+    <string name="regisclick">regisclick</string>
+    <string name="loginclick">loginclick</string>
+
+    <string name="smsregister">smsregister</string>
+    <string name="videofeedsetting">videofeedsetting</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="sendphone">sendphone</string>
+    <string name="isDistressOn">isDistressOn</string>
+    <string name="title_activity_maps_activitytral">Map</string>
+    <string name="sharedversion">sharedversion</string>
+    <string name="sharedfullname">sharedfullname</string>
+    <string name="videofeedpref">videofeedpref</string>
+    <string name="overlaypref">overlaypref</string>
+    <string name="voluppref">voluppref</string>
+    <string name="voldownpref">voldownpref</string>
+    <string name="voldownpre">vold</string>
+    <string name="voluppre">volu</string>
+    <string name="runpref">runpref</string>
+    <string name="prevolumepref">prevolumepref</string>
+    <string name="volumeactivepref">volumeactivepred</string>
+    <string name="volupactivepref">volupactivepref</string>
+
+
+    <string name="centreemergencyno">08147616916</string>
+    <string name="userwork">userwork</string>
+    <string name="userdepartment">userdepartment</string>
+    <string name="usermatric">usermatric</string>
+
+
+    <string name="clickcount">clickcount</string>
+    <string name="title_activity_slide_screen">SlideScreen</string>
+
+    <!--The Emergency Phone numbers/-->
+    <string name="phoneone">08147616916</string>
+    <string name="phonetwo">09026810710</string>
+    <string name="phonethree">08034334531</string>
+    <string name="defaultEmergency">defaultEmergency</string>
+    <string name="colorstatePref">colorstatePref</string>
+    <string name="distressServicePref">distressServicePref</string>
+    <string name="serviceCallControlPref">serviceCallControlPref</string>
+
+
+</resources>

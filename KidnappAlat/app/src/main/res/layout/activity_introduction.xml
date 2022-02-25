@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Introduction">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/kiding"
+        android:scaleType="centerCrop"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#df000005" >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/kidnappalat"
+            android:layout_marginTop="198dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/line"
+            android:fontFamily="@font/exo"
+            android:gravity="center"
+            android:text="KIDNAPPALAT"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kidnappalat"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blurtrans"
+            android:id="@+id/contineapp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_toLeftOf="@+id/continuebutton"
+            android:fontFamily="@font/ebrima"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Click here to continue to the App"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:id="@+id/continuebutton"
+            android:layout_below="@+id/kidnappalat"
+            android:background="@drawable/corners"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/blurtrans"
+            android:fontFamily="@font/ebrimabd"
+            android:textColor="@color/white"
+            android:layout_alignRight="@+id/kidnappalat"
+            android:text="Continue"
+            android:textSize="11sp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/distressbutton"
+            android:textColor="#99ffffff"
+            android:fontFamily="@font/ebrima"
+            android:textSize="12sp"
+            android:id="@+id/distresstext"
+            android:includeFontPadding="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="Distress Button"
+            />
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/distressbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/circleinner">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:id="@+id/distress"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circleline" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/surface"
+        android:visibility="gone"/>
+
+    <!--<include layout="@layout/content_introduction" />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:visibility="gone"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

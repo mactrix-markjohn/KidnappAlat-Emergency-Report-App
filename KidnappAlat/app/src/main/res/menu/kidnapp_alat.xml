@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/emcontacts"
+        android:title="Emergency Contacts"/>
+
+    <item android:id="@+id/videofeed"
+        android:title="VideoFeed">
+
+        <!-- How to create a checkable menu/-->
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item android:id="@+id/onvideofeed"
+                    android:title="ON VideoFeed"
+                    android:checkable="true"/>
+
+                <item android:id="@+id/offvideofeed"
+                    android:title="OFF VideoFeed"
+                    android:checkable="true"/>
+
+            </group>
+
+        </menu>
+
+
+
+    </item>
+
+
+
+
+    <item
+        android:id="@+id/signout"
+        android:orderInCategory="100"
+        android:title="Exit"
+        app:showAsAction="never" />
+</menu>

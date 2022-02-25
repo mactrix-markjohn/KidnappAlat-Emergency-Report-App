@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kidnappalat">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launchingicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/launchicon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SlideScreen"
+            android:label="@string/title_activity_slide_screen"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <receiver android:name=".DistressWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/distress_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".Services.VolumeService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".BroadcastReceivers.VolumeReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".Services.VideoFeedService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".BroadcastReceivers.StopServiceBroadcast"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".BroadcastReceivers.SMSReceivers"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".Services.SMSDistressService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".BroadcastReceivers.ServiceBroadcast"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".BroadcastReceivers.RestarterBroadcast"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".BroadcastReceivers.RestartAlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".BroadcastReceivers.ReBootAlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".EmergencyContacts"
+            android:label="@string/title_activity_emergency_contacts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Introduction"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserInfo"
+            android:label="@string/title_activity_user_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KidnappAlat"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

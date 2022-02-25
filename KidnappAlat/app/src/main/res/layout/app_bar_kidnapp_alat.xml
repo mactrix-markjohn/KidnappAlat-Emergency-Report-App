@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KidnappAlat">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/litelayer"
+        android:background="@drawable/blueblackgradient">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:id="@+id/morelite"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_more_vert_black_24dp"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@+id/morelite"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/personlite"
+                android:visibility="gone"
+                android:scaleType="centerInside"
+                android:src="@drawable/userline"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#bbbbbb"
+                android:fontFamily="@font/bankgthd"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:text="KidnappAlat"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/gothic"
+                android:textColor="#bbbbbb"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:text="Click button below to Report Distress"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/layglow"
+            android:background="@drawable/circlegradient">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="65dp"
+                app:cardElevation="5dp"
+                android:foreground="?selectableItemBackground"
+                app:cardBackgroundColor="#00000f13"
+                android:onClick="alat"
+                android:id="@+id/alat">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/alertback"
+                    android:background="@drawable/circleringgradient"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textSize="30sp"
+                        android:textColor="#aaffffff"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:text="TAP"
+                        android:fontFamily="@font/bankgthd"/>
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:visibility="gone"
+                        android:src="@mipmap/launchingicon"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:visibility="visible"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_alert"/>
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/centerlay"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/videofeed"
+                    android:src="@drawable/ic_videocctv"
+                    android:scaleType="centerInside"
+                    android:padding="13dp"
+                    android:onClick="videofeed"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:textColor="#aaaaaaaa"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/humn"
+                    android:text="VideoFeed"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/centerlay"
+                android:layout_marginStart="100dp"
+                android:layout_centerVertical="true">
+
+
+                <ImageView
+                    android:foreground="?selectableItemBackgroundBorderless"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_usernew"
+                    android:padding="13dp"
+                    android:onClick="profile"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:textColor="#aaaaaaaa"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/humn"
+                    android:text="Profile"/>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/centerlay"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="100dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:foreground="?selectableItemBackground"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_telephone"
+                    android:padding="13dp"
+                    android:onClick="emergencycontact"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:textColor="#aaaaaaaa"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/humn"
+                    android:text="Contacts"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <!--<include layout="@layout/content_kidnapp_alat" />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
